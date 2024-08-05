@@ -540,7 +540,7 @@ local function smoothTP(cf)
         if (btns[1].Position-cf.p).Magnitude < (cf.p-root.Position).Magnitude then
             game:GetService("ReplicatedStorage").PlayerChannel:FireServer("TeleportToJob", ((btns[1].Name == "Marker") and "House" or btns[1].Name))
             wait(0.7)
-            if (cf.p-root.Position).Magnitude < 8 then
+            if (cf.p-root.Position).Magnitude < 35 then
                 return
             end
         end
